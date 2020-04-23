@@ -14,6 +14,4 @@ Additions and improvements are welcome, installation instructions below.
 
 • Copy-paste the code from the stylesheet into Stylus, and save it as a custom context for Roam Research (or use the equivalent extension for other browsers).
 
-• Check back for updates periodically.
-
-• There are probably smarter ways of doing this but this is what I'm doing.
+• You'll have to check back for updates periodically with this method, since I don't know how to automate it (sorry).
