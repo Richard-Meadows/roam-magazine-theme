@@ -1,0 +1,299 @@
+/*### ROAM CUSTOM THEME -- Magazine Style ###
+> Adapted from themes by Mark Robertson
+> Which in turn are based on too many to mention individually
+> v1.0
+*/
+
+/* README:
+> Amateur work, this is gonna be messy
+> You may need to first install Google Fonts 'Oswald' and 'EB Garamond' locally
+> Unresolved styling issues to fix in future version: 
+    •page embeds
+    •block references in h1 or h2 font matching
+    •no doubt more I haven't noticed yet
+*/
+
+/* Left Navigation Pane */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page { 
+    background-color: #182026;
+    color: #5c7080;
+	font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .flex-h-box { 
+    color: #5c7080;
+	font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Hover effect for Shortcut Page and Navigation Bar */
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  color: black;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #f7e4e7;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover { 
+  color: black;
+  background-color: #f7e4e7;
+  border-radius: 15px;
+}
+
+/* Side Bar Open/Close Icon */
+.bp3-button:before, 
+	.bp3-minimal:before, 
+	.bp3-icon-menu:before,
+	.bp3-small:before {
+	color: #5c7080 !important;
+}
+
+/* Right Sidebar */
+#right-sidebar {
+    background-color:#f7e4e7 !important;
+    font-size: 17px;
+}
+#right-sidebar .level2 a {
+    color: #555;
+}
+#roam-right-sidebar-content h1 { 
+    font-size: 30px;
+}
+#roam-right-sidebar-content h2 { 
+    font-size: 24px;
+}
+#roam-right-sidebar-content h3 { 
+    font-size: 20px;
+}
+
+/* Font Styles*/
+div {
+  font-family: 'EB Garamond', serif; 
+  line-height: 1.3em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.roam-body .roam-app .roam-main .roam-article {
+	color: #000;
+	font-size: 18px;
+}
+
+.roam-table th, .roam-table td, .roam-table tr {
+    font-size: 15px;
+}
+
+/* Header Styles */
+.roam-body .roam-app h1 { /* styles page titling */
+    font-family: 'Oswald';
+    color: #444 !important;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.roam-body .roam-app h2 { /* styles page titling */
+    font-family: 'Oswald' !important;
+    font-size: 30px;
+    color: #555 !important;
+    font-weight: 500;
+}
+
+.roam-app h3 { /* styles page titling */
+    font-family: 'Impact' !important;
+    font-size: 24px;
+    color: #3d516d !important;
+    font-weight: normal;
+}
+/* Header Styles Within Pages*/
+
+.rm-level1 .rm-block-text { 
+    font-family: 'Oswald';
+    font-size: 40px !important;
+    font-weight: 500 !important;
+}
+.rm-level2 .rm-block-text { 
+    font-family: 'Oswald';
+    font-weight: 400 !important;
+}
+.rm-level3 a { 
+    color: #444;
+}
+
+/* Styles Page Links Sitewide   */
+span.rm-page-ref { 
+  color: #A00;
+}
+
+/* Markdown Link Titles (External URLs)*/
+a { 
+    color: #C05e12;
+}
+
+/* Selection Style */
+.rm-block-input {
+    background-color: #f7e4e7;
+    border-radius: 10px;
+    padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* File Tree Style */
+.block-border-left { /* the tree/outline graphics */
+    border-left: 1px solid #bfccd6;
+}
+
+/* Bullet Style */
+.controls .simple-bullet-outer .simple-bullet-inner {
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: #A00;
+}
+
+/* Expandable Bullets */
+.roam-bullet-closed { 
+    background-color: #f7e4e7;
+}
+
+/* Roam Search Box */
+.bp3-input,
+.bp3-input[readonly]{ 
+    background: white;
+    box-shadow: inset 0 0 0 1px #bfccd6;
+}
+
+/* Text in Search Results Box */
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
+  word-break: break-word;
+  color: black;
+  overflow-wrap: break-spaces;
+  margin-left: -20px;
+}
+
+/* Create New Page Style */
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
+  color: #A00;
+}
+
+/* Popup Style */
+.bp3-popover-content {
+background: yellow !important;
+}
+
+.bp3-popover .bp3-popover-arrow-fill {
+    fill: #62003b;
+}
+.bp3-popover .bp3-popover-content,
+.bp3-menu {
+    background: #ffffff !important;
+    color: #3d516d;
+  
+}
+
+/* Slash Popup */
+.bp3-elevation-3 {
+	color: black;
+background-color: #f7e4e7 ;
+	border-radius: 4px;
+	box-shadow: 0 0 0 1px #444,
+                0 2px 10px #444/*,
+                /*0 8px 24px rgba(16, 22, 26, 0.2)*/;
+}
+
+
+/* Block Reference Style */
+.rm-block-ref {
+  padding: 4px 2px;
+  margin: -4px 0px;
+  display: inline;
+  border-radius: 5px;
+  -bottom: 1px solid #999; 
+  cursor: alias;
+  padding-left: 0px;
+}
+.rm-block-ref:hover {
+  background-color: #f7e4e7;
+	border-radius: 8px;
+}
+
+/* Reference Separator Style */
+.rm-reference-container {
+  border-top: 3px solid #999;
+  padding-top: 12px;
+  margin-bottom: 8px;
+}
+
+ /*Reference Boxes Style */
+.rm-reference-item {
+    background-color: #faf2f4;
+    border-radius: 15px;
+    padding: 20px;
+}    
+
+/* Kanban Style */
+.kanban-board {
+    background-color: #fff;
+}
+
+.kanban-card {
+    background-color: white;
+    margin: 8px;
+    box-shadow: 0px 1px 2px #9EB3C0;
+    padding: 10px;
+    border-radius: 2px;
+    line-height: 1.3em;
+}
+
+.kanban-title {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 6px;
+}
+
+.kanban-column {
+    background-color: #E4EDF2;
+    margin: 0px 4px 0px 4px;
+    padding: 4px;
+    min-width: 200px;
+    border-radius: 3px;
+}
+
+/* Roam Page Sorter */
+.rm-pages-row {
+  color: black;
+  font-size: 18px;
+  padding: 8px 4px;
+  flex: 1 0 15%;
+}
+
+/* Highlight Styles */
+.roam-highlight {
+  background-color: #f8ee4d;
+  margin: -2px;
+  padding: 2px;
+}
+
+/* Namespace Color */
+.rm-page-ref-namespace-color {
+  color: green;
+}
+
+/* Tag Styles */
+.rm-page-ref-tag {
+    color: #62003b !important;
+    background-color: #f7e4e7;
+    border-radius: 8px;
+    padding: .5px 3.5px .5px 3.5px;
+}
+.rm-page-ref-tag:hover {
+    color: #444 !important;
+    background-color: #f7e4e7;
+    text-decoration: none;
+}
+/* Overflow Text */
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
