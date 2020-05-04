@@ -10,7 +10,7 @@
 > Unresolved styling issues to fix in future version: 
     •page embeds
     •block references in h1 or h2 font matching
-    •no doubt more I haven't noticed yet
+    •possibly more I haven't noticed
 */
 
 /* Left Navigation Pane */
@@ -209,7 +209,7 @@ background-color: #f7e4e7 ;
   margin: -4px 0px;
   display: inline;
   border-radius: 5px;
-  -bottom: 1px solid #999; 
+  border-bottom: 1px solid #999; 
   cursor: alias;
   padding-left: 0px;
 }
